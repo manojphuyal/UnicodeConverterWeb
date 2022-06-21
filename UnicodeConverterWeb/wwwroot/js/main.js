@@ -13,7 +13,8 @@ function doStuff(data) {
     if (data.endsWith(" ")) {
         $.ajax({
             type: 'POST',
-            url: 'https://unicodeapi2.kanchibazaar.com/GetUnicode?text=' + sliceData,
+            //url: 'https://unicodeapi2.kanchibazaar.com/GetUnicode?text=' + sliceData,
+            url: 'https://localhost:44303/GetUnicode?text=' + sliceData,
             dataType: "json",
             crossDomain: true,
             success: function (msg) {
